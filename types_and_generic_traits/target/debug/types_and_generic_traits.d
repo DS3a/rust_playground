@@ -1,0 +1,1 @@
+/home/d33p/dev/Rust/rust_playground/types_and_generic_traits/target/debug/types_and_generic_traits: /home/d33p/dev/Rust/rust_playground/types_and_generic_traits/src/generic_types.rs /home/d33p/dev/Rust/rust_playground/types_and_generic_traits/src/main.rs
