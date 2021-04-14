@@ -40,6 +40,10 @@ impl A {
     fn kill(self) {
         println!("Killing {}", self);
     }
+
+    fn factor(self, arg: f64) {
+        println!("{}", (self.a as f64)*self.b*arg)
+    }
 }
 
 fn main(){
@@ -60,4 +64,7 @@ fn main(){
     let b = A{a: 1, b: 24 as f64};
     generic_types::time_to_run(|| {b.kill()});
     let c = generic_types::N{x: 1 as u8,y: 1 as u8};
+    let a = A {a: 1, b: 23.9};
+
+    generic_types::time_to_run_arg(|i: f64| {a.factor(i)}, 2.9);
 }

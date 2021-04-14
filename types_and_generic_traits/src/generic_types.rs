@@ -23,3 +23,11 @@ where T: Fn() -> (){
     let time_end = Instant::now();
     println!("The function took {:?} to run", time_end-time_start);
 }
+
+pub fn time_to_run_arg<T, T2>(func: T, arg: T2)
+where T: Fn(T2) {
+    let time_start = Instant::now();
+    func(arg);
+    let time_end = Instant::now();
+    println!("The function took {:?} to run", time_end-time_start);
+}
